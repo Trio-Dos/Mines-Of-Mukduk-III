@@ -19,7 +19,7 @@ jobs:
       - name: Setup Gradle
         uses: gradle/gradle-build-action@v2
       - name: Build with Gradle
-        run: gradle compile
+        run: gradle compileKotlinJvm
 
   test:
     runs-on: ubuntu-latest
