@@ -1,0 +1,10 @@
+name: Publish
+
+on:
+  push:
+    tags:
+      - '*'
+
+# TODO: publish release artifacts on tag
+jobs:
+  build:
