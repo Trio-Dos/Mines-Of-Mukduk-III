@@ -24,3 +24,7 @@ korge {
 	serializationJson()
 	//targetAndroidDirect()
 }
+
+tasks.register("stage") {
+    dependsOn("build", "clean")
+}
