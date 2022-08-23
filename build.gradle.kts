@@ -26,5 +26,5 @@ korge {
 }
 
 tasks.register("stage") {
-    dependsOn("build", "clean")
+    dependsOn("jsBrowserProductionWebpack")
 }
