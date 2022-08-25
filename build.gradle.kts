@@ -3,6 +3,7 @@ import com.soywiz.korge.gradle.*
 @Suppress("DSL_SCOPE_VIOLATION")
 plugins {
 	alias(libs.plugins.korge)
+    application
 }
 
 korge {
@@ -26,5 +27,5 @@ korge {
 }
 
 tasks.register("stage") {
-    dependsOn("jsBrowserProductionWebpack")
+    dependsOn(":browserReleaseEsbuild", "startScripts")
 }
