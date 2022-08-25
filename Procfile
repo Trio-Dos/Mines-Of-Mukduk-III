@@ -1,1 +1,1 @@
-web: ./build/scripts/Mines-Of-Mukduk-III
+web: npm start
