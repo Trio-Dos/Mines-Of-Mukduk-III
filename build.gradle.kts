@@ -16,7 +16,7 @@ korge {
 	//targetDefault()
 
 // To selectively enable targets
-	targetJvm()
+//	targetJvm()
 	targetJs()
 //	targetDesktop()
 //	targetIos()
@@ -27,5 +27,5 @@ korge {
 }
 
 tasks.register("stage") {
-    dependsOn(":browserReleaseEsbuild", "startScripts")
+    dependsOn("jsBrowserDistribution")
 }
