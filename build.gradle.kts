@@ -27,5 +27,13 @@ korge {
 }
 
 tasks.register("stage") {
-    dependsOn("jsBrowserDistribution")
+    dependsOn("jsBrowserDistribution", "copyNodeStuff")
 }
+
+
+
+tasks.register<Copy>("copyNodeStuff") {
+    from(layout.buildDirectory.dir("js"))
+    into(layout.projectDirectory)
+}
+
